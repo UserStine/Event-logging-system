@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>VELS</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="report.css" />
+    <span style="font-family: verdana, geneva, sans-serif"></span>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+<body>
+    <div class="container">
+        <form action="submit_incident.php" method="post">
+            <div class="row">
+                <h1>Incident Report Form</h1>
+                <div class="input-group input-group-icon">
+                    <input type="text" name="full_name" placeholder="Full Name">
+                    <div class="input-icon"><i class="fa fa-user"></i></div>
+                </div>
+                <div class="input-group input-group-icon">
+                    <input type="email" name="email" placeholder="Email Address">
+                    <div class="input-icon"><i class="fa fa-envelope"></i></div>
+                </div>
+            </div>
+            <div class="col-half">
+                <h4>Gender</h4>
+                <div class="input-group">
+                    <input id="gender-male" type="radio" name="gender" value="male">
+                    <label for="gender-male">Male</label>
+                    <input id="gender-female" type="radio" name="gender" value="female">
+                    <label for="gender-female">Female</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-half">
+                    <h4>Date of Incident</h4>
+                    <div class="input-group">
+                        <div class="col-third">
+                            <input type="text" name="incident_day" placeholder="DD">
+                        </div>
+                        <div class="col-third">
+                            <input type="text" name="incident_month" placeholder="MM">
+                        </div>
+                        <div class="col-third">
+                            <input type="text" name="incident_year" placeholder="YYYY">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <h4>Location of Incident</h4>
+                <div class="input-group">
+                    <div class="input-group input-group-icon">
+                        <input type="text" name="incident_location" placeholder="Location">
+                        <div class="input-icon"><i class="fas fa-map-marker"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <h4>Severity</h4>
+                <div class="input-group">
+                    <select name="severity">
+                        <option value="low">Low</option>
+                        <option value="medium">Medium</option>
+                        <option value="high">High</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <h4>Please describe the incident in detail</h4>
+                <div class="input-group input-group-icon">
+                    <textarea name="incident_description" ></textarea>
+                    <div class="input-icon"><i class="fas fa-exclamation-triangle"></i></div>
+                </div>
+            </div>
+            <div class="col-half">
+              <h4>Comments</h4>
+                <div class="input-group input-group-icon">
+              <textarea id="comments" name="comments"></textarea>
+              <div class="input-icon"><i class="fas fa-comments"></i></div>
+          </div>
+            <div class="row">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
