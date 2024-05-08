@@ -1,9 +1,9 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Establish database connection
-    $servername = "your_servername";
-    $username = "your_username";
-    $password = "your_password";
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
     $dbname = "valco_incident";
 
     // Create connection
